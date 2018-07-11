@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DVRCamListHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ol-gy-UP6">
+                    <rect key="frame" x="98" y="6" width="125" height="26"/>
+                    <color key="backgroundColor" red="0.73725490199999999" green="0.062745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mj-Tu-APB">
+                    <rect key="frame" x="110" y="12" width="100" height="16"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" red="0.73725490199999999" green="0.062745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4ol-gy-UP6" firstAttribute="leading" secondItem="7Mj-Tu-APB" secondAttribute="leading" constant="-12" id="1SJ-PS-WtM"/>
+                <constraint firstItem="4ol-gy-UP6" firstAttribute="trailing" secondItem="7Mj-Tu-APB" secondAttribute="trailing" constant="13" id="A9V-s3-OIb"/>
+                <constraint firstItem="7Mj-Tu-APB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JgR-9u-Fvu"/>
+                <constraint firstItem="4ol-gy-UP6" firstAttribute="top" secondItem="7Mj-Tu-APB" secondAttribute="top" constant="-6" id="K8h-W9-z8c"/>
+                <constraint firstItem="4ol-gy-UP6" firstAttribute="bottom" secondItem="7Mj-Tu-APB" secondAttribute="bottom" constant="4" id="Urs-C4-pRu"/>
+                <constraint firstItem="7Mj-Tu-APB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iR9-1q-GtX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerTitle" destination="7Mj-Tu-APB" id="rZl-hl-9ut"/>
+            </connections>
+            <point key="canvasLocation" x="433" y="106"/>
+        </view>
+    </objects>
+</document>
